@@ -1,7 +1,7 @@
 proleap-cobol
 =============
 
-Code base for proleap-cobol that allows you to analyze, execute & transform COBOL
+Code base for proleap-cobol that allows you to analyze, execute & transform COBOL in the cloud.
 
 You find a deployed version of this repository at [proleap.io](https://www.proleap.io/).
 
