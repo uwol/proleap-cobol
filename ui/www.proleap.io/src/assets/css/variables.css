@@ -1,0 +1,8 @@
+html {
+  --body-font-family: "Roboto", Arial, sans-serif;
+  --header-font-family: "Roboto", Arial, sans-serif;
+
+  --header-font-weight: 600;
+  --body-font-weight: 300;
+  --navbar-font-weight: 400;
+}

@@ -1,0 +1,21 @@
+ IDENTIFICATION DIVISION.
+ PROGRAM-ID. PERFORMPROCEDURE.
+ PROCEDURE DIVISION.
+ INIT.
+     PERFORM PROC1.
+     PERFORM PROC2.
+     PERFORM PROC1 
+       WITH TEST 
+       AFTER UNTIL 1=1.
+     PERFORM PROC2 THROUGH PROC4.
+     PERFORM PROC1 
+       2 TIMES.
+     STOP RUN.
+ PROC1.
+     Display "Proc1".
+ PROC2.
+     Display "Proc2".
+ PROC3.
+     Display "Proc3".
+ PROC4.
+     Display "Proc4".

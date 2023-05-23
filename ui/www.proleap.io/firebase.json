@@ -1,0 +1,22 @@
+{
+  "hosting": {
+    "public": "dist",
+    "headers": [
+      {
+        "source": "**/*.@(css|eot|gif|ico|jpg|jpeg|js|png|svg|ttf|txt|woff|woff2)",
+        "headers": [
+          { "key" : "Cache-Control", "value": "max-age=3600" }
+        ]
+      }
+    ],
+    "ignore": [
+      "**/.*"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}

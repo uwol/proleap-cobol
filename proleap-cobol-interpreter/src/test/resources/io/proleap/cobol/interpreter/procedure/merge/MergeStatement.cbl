@@ -1,0 +1,40 @@
+ IDENTIFICATION DIVISION.
+ PROGRAM-ID. MergeFiles.
+
+ ENVIRONMENT DIVISION.
+ INPUT-OUTPUT SECTION.
+ FILE-CONTROL.
+    SELECT PersonFile ASSIGN TO "PERSONS.DAT"
+             ORGANIZATION IS LINE SEQUENTIAL.
+
+    SELECT InsertionsFile ASSIGN TO "TRANSINS.DAT"
+             ORGANIZATION IS LINE SEQUENTIAL.
+
+    SELECT NewPersonFile ASSIGN TO "PERSONS.NEW"
+             ORGANIZATION IS LINE SEQUENTIAL.
+
+    SELECT WorkFile ASSIGN TO "WORK.TMP".
+
+ DATA DIVISION.
+ FILE SECTION.
+ FD  PersonFile.
+ 01  PersonRec PIC X(30).
+
+ FD  InsertionsFile.
+ 01  InsertionRec PIC X(30).
+
+ FD  NewPersonFile.
+ 01  NewPersonRec PIC X(30).
+
+ SD  WorkFile.
+ 01  WorkRec.
+    02 WPersonId PIC 9(7).
+    02 FILLER PIC X(23).
+
+ PROCEDURE DIVISION.
+ Begin.
+    MERGE WorkFile
+       ON ASCENDING KEY WPersonId
+       USING InsertionsFile, PersonFile
+       GIVING NewPersonFile.
+    STOP RUN.

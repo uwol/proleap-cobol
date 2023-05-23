@@ -1,0 +1,12 @@
+Sitemap: https://www.proleap.io/sitemap.xml
+
+User-agent: Googlebot-Image
+Disallow: /
+
+User-agent: ia_archiver
+Disallow: /
+
+User-agent: *
+Disallow: /imprint
+Disallow: /privacy
+Disallow: /terms
