@@ -1,5 +1,5 @@
-proleap-cobol
-=============
+ProLeap ANTLR4-based analyzer, interpreter & transformer for COBOL
+==================================================================
 
 Code base for proleap-cobol that allows you to analyze, execute & transform COBOL in the cloud.
 
