@@ -22,7 +22,7 @@ Where to look next
 ------------------
 
 - [ANTLR4 COBOL grammar](https://github.com/uwol/proleap-cobol-parser/tree/master/src/main/antlr4/io/proleap/cobol/Cobol.g4)
-- [ANTLR4 COBOL preprocessor grammar](src/main/antlr4/io/proleap/cobol/CobolPreprocessor.g4)
+- [ANTLR4 COBOL preprocessor grammar](https://github.com/uwol/proleap-cobol-parser/tree/master/src/main/antlr4/io/proleap/cobol/CobolPreprocessor.g4)
 - [Analysis unit tests](proleap-cobol-analysis/src/test/java/io/proleap/cobol/analysis)
 - [Interpreter unit tests](proleap-cobol-interpreter/src/test/java/io/proleap/cobol/interpreter)
 - [Transform unit tests](proleap-cobol-transform/src/test/java/io/proleap/cobol/transform)
