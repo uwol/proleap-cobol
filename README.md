@@ -14,7 +14,7 @@ At [proleap.io](https://www.proleap.io/) you find a deployed version of this rep
 Getting started
 ---------------
 
-In Eclipse open `proleap-cobol-app/src/main/java/io/proleap/cobol/ProLeapCobolEmbeddedJetty` and run the main method as Java application. A Jetty will start, which offers the functionality as on [proleap.io](https://www.proleap.io/).
+In Eclipse open [ProLeapCobolEmbeddedJetty](proleap-cobol-app/src/main/java/io/proleap/cobol/ProLeapCobolEmbeddedJetty) and run the main method as Java application. A Jetty will start, which offers the functionality as on [proleap.io](https://www.proleap.io/).
 
 
 Where to look next
