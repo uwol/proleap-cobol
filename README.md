@@ -20,7 +20,7 @@ In Eclipse open [ProLeapCobolEmbeddedJetty](proleap-cobol-app/src/main/java/io/p
 Support
 -------
 
-This program is free software under AGPL v3 license and in this form comes without support. However, our company [ProLeap GmbH](https://www.proleap.io/imprint) is open to discuss project requirements of your company. Feel free to contact us at contact@proleap.io
+This program is free software under AGPL v3 license and in this form comes without support. However, our company [ProLeap GmbH](https://www.proleap.io/imprint) is open to discuss project and license requirements with your company. Feel free to contact us at contact@proleap.io
 
 
 Where to look next
