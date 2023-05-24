@@ -12,6 +12,22 @@ At [proleap.io](https://www.proleap.io/) you find a deployed version of this rep
 [![ProLeap on Twitter](https://img.shields.io/twitter/follow/proleap_io.svg?style=social&label=Follow)](https://twitter.com/proleap_io)
 
 
+Getting started
+---------------
+
+In Eclipse open `proleap-cobol-app/src/main/java/io/proleap/cobol/ProLeapCobolEmbeddedJetty` and run the main method as Java application. A Jetty will start, which offers the functionality as on [proleap.io](https://www.proleap.io/).
+
+
+Where to look next
+------------------
+
+- [ANTLR4 COBOL grammar](https://github.com/uwol/proleap-cobol-parser/tree/master/src/main/antlr4/io/proleap/cobol/Cobol.g4)
+- [ANTLR4 COBOL preprocessor grammar](src/main/antlr4/io/proleap/cobol/CobolPreprocessor.g4)
+- [Analysis unit tests](proleap-cobol-analysis/src/test/java/io/proleap/cobol/analysis)
+- [Interpreter unit tests](proleap-cobol-interpreter/src/test/java/io/proleap/cobol/interpreter)
+- [Transform unit tests](proleap-cobol-transform/src/test/java/io/proleap/cobol/transform)
+
+
 Build dependency proleap-cobol-parser
 -------------------------------------
 
@@ -45,20 +61,15 @@ $ mvn clean package
 ```
 [INFO] Scanning for projects...
 ...
--------------------------------------------------------
- T E S T S
--------------------------------------------------------
-Running io.proleap.cobol.ast.fixed.FixedTest
-Preprocessing file Fixed.cbl.
-Parsing file Fixed.cbl.
-Comparing parse tree with file Fixed.cbl.tree.
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.202 sec
-Running io.proleap.cobol.ast.fixed.QuotesInCommentEntryTest
-...
-Results :
-
-Tests run: 680, Failures: 0, Errors: 0, Skipped: 0
-
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary for proleap-cobol 1.0.0:
+[INFO] 
+[INFO] proleap-cobol ...................................... SUCCESS [  0.066 s]
+[INFO] proleap-cobol-commons .............................. SUCCESS [  3.431 s]
+[INFO] proleap-cobol-analysis ............................. SUCCESS [  6.682 s]
+[INFO] proleap-cobol-interpreter .......................... SUCCESS [  4.164 s]
+[INFO] proleap-cobol-transform ............................ SUCCESS [  4.180 s]
+[INFO] proleap-cobol-app .................................. SUCCESS [ 14.306 s]
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
