@@ -17,6 +17,12 @@ Getting started
 In Eclipse open [ProLeapCobolEmbeddedJetty](proleap-cobol-app/src/main/java/io/proleap/cobol/ProLeapCobolEmbeddedJetty.java) and run the main method as Java application. A Jetty will start, which offers the functionality as on [proleap.io](https://www.proleap.io/).
 
 
+Support
+-------
+
+This program is free software under AGPL v3 license and in this form comes without support. However, our company [ProLeap GmbH](https://www.proleap.io/imprint) is open to discuss project requirements of your company. Feel free to contact us at contact@proleap.io
+
+
 Where to look next
 ------------------
 
