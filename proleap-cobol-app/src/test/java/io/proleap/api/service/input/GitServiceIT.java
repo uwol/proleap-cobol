@@ -7,9 +7,9 @@ import java.io.File;
 
 import org.junit.jupiter.api.Test;
 
-import io.proleap.service.input.git.GitService;
-import io.proleap.service.input.git.impl.GitServiceImpl;
-import io.proleap.util.FilesUtils;
+import io.proleap.cobol.service.input.git.GitService;
+import io.proleap.cobol.service.input.git.impl.GitServiceImpl;
+import io.proleap.cobol.util.FilesUtils;
 
 public class GitServiceIT {
 
