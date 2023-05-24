@@ -1,8 +1,7 @@
 ProLeap ANTLR4-based analyzer, interpreter & transformer for COBOL
 ==================================================================
 
-This is an analyzer, interpreter & transformer for COBOL based on [ProLeap COBOL parser](https://github.com/uwol/proleap-cobol-parser), 
-which generates an **Abstract Syntax Tree** (AST) and **Abstract Semantic Graph** (ASG) for COBOL code.
+This is an analyzer, interpreter & transformer for COBOL based on [ProLeap COBOL parser](https://github.com/uwol/proleap-cobol-parser). The parser generates an **Abstract Syntax Tree** (AST) and **Abstract Semantic Graph** (ASG) for COBOL code, which then is processed by this analyzer, interpreter & transformer.
 
 At [proleap.io](https://www.proleap.io/) you find a deployed version of this repository that allows you to test with your COBOL files.
 
