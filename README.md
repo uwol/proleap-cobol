@@ -47,7 +47,7 @@ Build Process
 The build process is based on Maven (version 3 or higher). Building requires a JDK 17.
 
 * Clone or download the repository.
-* In [Eclipse](https://eclipse.org) import the directory as a an `existing Maven project`. *Important*: Open Eclipse > Preferences > Maven > Annotation Processing and select "Automatically configure JDT APT", so that dependency injection framework `Micronaut` automatically processes all `@Inject` annotations.
+* In [Eclipse](https://eclipse.org) import the directory as a an `existing Maven project`. *Important*: Open Eclipse > Preferences > Maven > Annotation Processing and select "Automatically configure JDT APT", so that dependency injection framework [Micronaut](https://micronaut.io/) automatically processes all `@Inject` annotations.
 * To build, run:
 
 ```
