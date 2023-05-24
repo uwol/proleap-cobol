@@ -36,7 +36,7 @@ Where to look next
 Build dependency proleap-cobol-parser
 -------------------------------------
 
-* Clone repository `https://github.com/uwol/proleap-cobol-parser` locally.
+* Clone repository [uwol/proleap-cobol-parser](https://github.com/uwol/proleap-cobol-parser) locally.
 * As described in the README.md of that repository, run:
 
 ```
