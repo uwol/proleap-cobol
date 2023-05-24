@@ -42,7 +42,7 @@
         </div>
       </div>
       <div class="footer-imprint text-center">
-        © {{ new Date().getFullYear() }} ProLeap.io, a <a href="http://www.nitroventures.de">nitro ventures</a> product
+        © {{ new Date().getFullYear() }} ProLeap GmbH
         &mdash;
         <router-link :to="{ name: 'imprint'}">
           Imprint
