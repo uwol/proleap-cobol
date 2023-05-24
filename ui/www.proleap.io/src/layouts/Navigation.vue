@@ -15,6 +15,7 @@
         >
         <span class="d-none d-sm-inline">ProLeap</span>
       </router-link>
+
       <button 
         class="navbar-toggler" 
         type="button" 
@@ -26,7 +27,8 @@
       >
         <span class="navbar-toggler-icon" />
       </button>
-      <div 
+
+      <div
         id="navbar-collapse" 
         class="collapse navbar-collapse justify-content-end text-center"
       >
@@ -40,6 +42,7 @@
               <span :class="['nav-link', currentRoute === 'blog' || currentRoute === 'blog-2018-01-02' ? 'active' : '']">Blog</span>
             </router-link>
           </li>
+
           <li 
             class="nav-item" 
             data-toggle="collapse" 
@@ -48,6 +51,21 @@
             <router-link :to="{ name: 'contact' }">
               <span :class="['nav-link', currentRoute === 'contact' ? 'active' : '']">Contact</span>
             </router-link>
+          </li>
+
+          <li 
+            class="nav-item" 
+            data-toggle="collapse" 
+            data-target=".navbar-collapse.show"
+          >
+            <a
+              href="https://github.com/proleap/proleap-cobol"
+              target="_blank"
+            >
+              <span class="nav-link btn btn-primary btn-sm">
+                GitHub
+              </span>
+            </a>
           </li>
         </ul>
       </div>

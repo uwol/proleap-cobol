@@ -6,6 +6,12 @@
           <h5>GitHub</h5>
           <ul>
             <li>
+              <a href="https://github.com/proleap/proleap-cobol">COBOL analyzer, interpreter & transformer</a>
+            </li>
+            <li>
+              <a href="https://github.com/proleap/proleap-vb6">VB 6.0 analyzer & transformer</a>
+            </li>
+            <li>
               <a href="https://github.com/uwol/proleap-cobol-parser">COBOL parser</a>
             </li>
             <li>
