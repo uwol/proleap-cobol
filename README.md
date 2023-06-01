@@ -23,6 +23,14 @@ Support
 This program is free software under AGPL v3 license and in this form comes without support. However, our company [ProLeap GmbH](https://www.proleap.io/imprint) is open to discuss project and license requirements with your company. Feel free to contact us at contact@proleap.io
 
 
+License
+-------
+
+This program is free software under AGPL v3 license. The code generated from this program is [NOT subject to AGPLv3 licensing](https://www.gnu.org/licenses/gpl-faq.html#WhatCaseIsOutputGPL). So you can use this program to transform COBOL to Java and keep the copyright for your code.
+
+The AGPLv3 license is only meant for this program itself. Our idea is that a joint effort in the industry is needed to build an open source tooling for COBOL modernization. Hopefully, in the future source code contributions from the industry are flowing back into this program, making COBOL modernization increasingly feasible for companies.
+
+
 Where to look next
 ------------------
 
