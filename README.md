@@ -99,3 +99,9 @@ $ mvn clean install
 ```
 $ mvn clean test
 ```
+
+* To deploy to Google Cloud (requires authentication)
+
+```
+$ mvn clean package -P jib-app
+```

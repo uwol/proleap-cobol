@@ -13,8 +13,17 @@
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-		<jetty.version>9.4.34.v20201102</jetty.version>
+		<jib.skip>true</jib.skip>
 	</properties>
+	<profiles>
+		<profile>
+				<id>jib-app</id>
+				<properties>
+						<jib.skip>false</jib.skip>
+						<jib.image>gcr.io/proleap-app/proleap-app</jib.image>
+				</properties>
+		</profile>
+	</profiles>
 	<dependencies>
 		<dependency>
 			<groupId>ch.qos.logback</groupId>
@@ -61,7 +70,7 @@
 		<dependency>
 			<groupId>org.eclipse.jetty</groupId>
 			<artifactId>jetty-webapp</artifactId>
-			<version>${jetty.version}</version>
+			<version>9.4.34.v20201102</version>
 		</dependency>
 		<dependency>
 			<groupId>org.eclipse.jgit</groupId>
@@ -82,8 +91,9 @@
 						<image>amazoncorretto:17</image>
 					</from>
 					<to>
-						<image>gcr.io/proleap-app/proleap-app</image>
+						<image>${jib.image}</image>
 					</to>
+					<skip>${jib.skip}</skip>
 				</configuration>
 				<executions>
 					<execution>
