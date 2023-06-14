@@ -52,7 +52,7 @@ $ mvn clean install
 ```
 
 * Now your local `~/.m2/repository` should contain dependency `io/github/uwol/proleap-cobol-parser`.
-* In [Eclipse](https://eclipse.org) import the directory `proleap-cobol-parser` as a an `existing Maven project`.
+* In [Eclipse](https://eclipse.org) import the directory `proleap-cobol-parser` as an `existing Maven project`.
 
 
 Build Process
@@ -69,6 +69,7 @@ $ mvn clean package
 ```
 
 * The test suite executes tests against COBOL test code.
+* If error `Missing artifact io.github.uwol:proleap-cobol-parser:jar:4.0.0` comes up, please check that dependency `proleap-cobol-parser` has been properly installed by Maven as described in the step before.
 * You should see output like this:
 
 ```
