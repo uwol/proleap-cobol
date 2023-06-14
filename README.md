@@ -69,7 +69,7 @@ $ mvn clean package
 ```
 
 * The test suite executes tests against COBOL test code.
-* If error `Missing artifact io.github.uwol:proleap-cobol-parser:jar:4.0.0` comes up, please check that dependency `proleap-cobol-parser` has been properly installed by Maven as described in the step before.
+* If error `Missing artifact io.github.uwol:proleap-cobol-parser:jar:4.0.0` comes up, please check that dependency `proleap-cobol-parser` has been properly installed by Maven as described in the chapter before.
 * You should see output like this:
 
 ```
