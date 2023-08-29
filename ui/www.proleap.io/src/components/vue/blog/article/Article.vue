@@ -78,14 +78,14 @@ export default {
       return `/img/pages/team/${authorKey}.jpg`
     },
     getLinkedInShareUrl: function (article) {
-      let url = encodeURIComponent(`https://www.loyjoy.com${article.path}`)
+      let url = encodeURIComponent(`https://www.proleap.io${article.path}`)
       let title = encodeURI(article.title)
       return `http://www.linkedin.com/shareArticle?url=${url}&title=${title}`
     },
     getTwitterShareUrl: function (article) {
-      let url = encodeURIComponent(`https://www.loyjoy.com${article.path}`)
+      let url = encodeURIComponent(`https://www.proleap.io${article.path}`)
       let text = encodeURI(article.title)
-      return `https://twitter.com/share?url=${url}&text=${text}&hashtags=LoyJoy`
+      return `https://twitter.com/share?url=${url}&text=${text}&hashtags=ProLeap`
     }
   }
 }
