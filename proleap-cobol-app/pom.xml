@@ -17,11 +17,11 @@
 	</properties>
 	<profiles>
 		<profile>
-				<id>jib-app</id>
-				<properties>
-						<jib.skip>false</jib.skip>
-						<jib.image>gcr.io/proleap-app/proleap-app</jib.image>
-				</properties>
+			<id>jib-app</id>
+			<properties>
+				<jib.skip>false</jib.skip>
+				<jib.image>gcr.io/proleap-app/proleap-app</jib.image>
+			</properties>
 		</profile>
 	</profiles>
 	<dependencies>
@@ -75,7 +75,7 @@
 		<dependency>
 			<groupId>org.eclipse.jgit</groupId>
 			<artifactId>org.eclipse.jgit</artifactId>
-			<version>4.8.0.201706111038-r</version>
+			<version>6.7.0.202309050840-r</version>
 		</dependency>
 	</dependencies>
 	<build>
@@ -86,7 +86,8 @@
 				<version>3.1.4</version>
 				<configuration>
 					<from>
-						<!-- DO NOT USE -alpine, as this will throw SIGSEGV errors in combination
+						<!-- DO NOT USE -alpine, as this will throw SIGSEGV
+						errors in combination
 							with gRPC -->
 						<image>amazoncorretto:17</image>
 					</from>
