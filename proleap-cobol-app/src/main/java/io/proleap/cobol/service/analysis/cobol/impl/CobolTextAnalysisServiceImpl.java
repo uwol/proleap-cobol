@@ -4,10 +4,10 @@ import java.io.IOException;
 import java.io.StringWriter;
 import java.util.Collections;
 
-import javax.inject.Inject;
-import javax.inject.Singleton;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
+import jakarta.inject.Inject;
+import jakarta.inject.Singleton;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
 
 import org.dom4j.Document;
 import org.dom4j.io.HTMLWriter;

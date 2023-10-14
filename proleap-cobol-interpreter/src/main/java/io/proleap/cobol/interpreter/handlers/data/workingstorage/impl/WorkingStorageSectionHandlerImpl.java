@@ -1,6 +1,6 @@
 package io.proleap.cobol.interpreter.handlers.data.workingstorage.impl;
 
-import javax.inject.Singleton;
+import jakarta.inject.Singleton;
 
 import io.proleap.cobol.asg.metamodel.data.workingstorage.WorkingStorageSection;
 import io.proleap.cobol.interpreter.handlers.data.impl.AbstractDataDescriptionEntryContainerInitializer;

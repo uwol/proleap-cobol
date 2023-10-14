@@ -3,8 +3,8 @@ package io.proleap.cobol.transform.java.rules.lang;
 import java.util.Arrays;
 import java.util.List;
 
-import javax.inject.Inject;
-import javax.inject.Singleton;
+import jakarta.inject.Inject;
+import jakarta.inject.Singleton;
 
 import io.proleap.cobol.CobolParser.CompilationUnitContext;
 import io.proleap.cobol.asg.metamodel.CompilationUnit;
@@ -56,9 +56,9 @@ public class CompilationUnitRule extends CobolTransformRule<CompilationUnitConte
 		rc.pNl();
 		rc.p("import java.util.List;");
 		rc.pNl();
-		rc.p("import javax.inject.Inject;");
+		rc.p("import jakarta.inject.Inject;");
 		rc.pNl();
-		rc.p("import javax.inject.Singleton;");
+		rc.p("import jakarta.inject.Singleton;");
 		rc.pNl();
 		rc.pNl();
 

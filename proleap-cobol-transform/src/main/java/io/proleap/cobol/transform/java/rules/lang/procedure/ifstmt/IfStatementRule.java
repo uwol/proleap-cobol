@@ -2,7 +2,7 @@ package io.proleap.cobol.transform.java.rules.lang.procedure.ifstmt;
 
 import java.util.List;
 
-import javax.inject.Singleton;
+import jakarta.inject.Singleton;
 
 import io.proleap.cobol.CobolParser.IfStatementContext;
 import io.proleap.cobol.asg.metamodel.procedure.Statement;

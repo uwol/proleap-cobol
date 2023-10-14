@@ -1,6 +1,6 @@
 package io.proleap.cobol.transform.java.rules.lang;
 
-import javax.inject.Singleton;
+import jakarta.inject.Singleton;
 
 import io.proleap.cobol.CobolParser.LiteralContext;
 import io.proleap.cobol.asg.metamodel.Literal;

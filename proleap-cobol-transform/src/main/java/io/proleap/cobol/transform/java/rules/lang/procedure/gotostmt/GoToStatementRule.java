@@ -1,6 +1,6 @@
 package io.proleap.cobol.transform.java.rules.lang.procedure.gotostmt;
 
-import javax.inject.Singleton;
+import jakarta.inject.Singleton;
 
 import io.proleap.cobol.CobolParser.GoToStatementContext;
 import io.proleap.cobol.asg.metamodel.procedure.gotostmt.GoToStatement;

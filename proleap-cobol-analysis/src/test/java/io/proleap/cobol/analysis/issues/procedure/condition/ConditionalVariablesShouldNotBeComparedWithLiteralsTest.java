@@ -6,11 +6,11 @@ import java.io.File;
 import java.util.List;
 import java.util.stream.Collectors;
 
-import javax.inject.Inject;
+import jakarta.inject.Inject;
 
 import org.junit.jupiter.api.Test;
 
-import io.micronaut.test.annotation.MicronautTest;
+import io.micronaut.test.extensions.junit5.annotation.MicronautTest;
 import io.proleap.cobol.analysis.TestBase;
 import io.proleap.cobol.analysis.issues.rules.procedure.condition.ConditionalVariablesShouldNotBeComparedWithLiteralsFeatureGenerator;
 import io.proleap.cobol.asg.metamodel.CompilationUnit;

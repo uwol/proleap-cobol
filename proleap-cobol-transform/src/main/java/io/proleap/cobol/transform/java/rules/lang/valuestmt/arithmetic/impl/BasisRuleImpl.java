@@ -1,7 +1,7 @@
 package io.proleap.cobol.transform.java.rules.lang.valuestmt.arithmetic.impl;
 
-import javax.inject.Inject;
-import javax.inject.Singleton;
+import jakarta.inject.Inject;
+import jakarta.inject.Singleton;
 
 import io.proleap.cobol.CobolParser.BasisContext;
 import io.proleap.cobol.asg.metamodel.valuestmt.arithmetic.Basis;

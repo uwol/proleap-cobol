@@ -4,7 +4,7 @@ import java.util.Scanner;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import javax.inject.Singleton;
+import jakarta.inject.Singleton;
 
 import io.proleap.cobol.commons.heuristic.lineformat.CobolLineFormatHeuristic;
 import io.proleap.cobol.preprocessor.CobolPreprocessor.CobolSourceFormatEnum;

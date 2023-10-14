@@ -1,6 +1,6 @@
 package io.proleap.cobol.transform.java.rules.lang.procedure.display;
 
-import javax.inject.Singleton;
+import jakarta.inject.Singleton;
 
 import io.proleap.cobol.CobolParser.DisplayOperandContext;
 import io.proleap.cobol.asg.metamodel.procedure.display.Operand;

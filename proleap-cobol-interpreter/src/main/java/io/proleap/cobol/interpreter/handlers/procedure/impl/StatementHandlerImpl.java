@@ -1,6 +1,6 @@
 package io.proleap.cobol.interpreter.handlers.procedure.impl;
 
-import javax.inject.Inject;
+import jakarta.inject.Inject;
 
 import io.proleap.cobol.asg.metamodel.procedure.Statement;
 import io.proleap.cobol.asg.metamodel.procedure.StatementType;

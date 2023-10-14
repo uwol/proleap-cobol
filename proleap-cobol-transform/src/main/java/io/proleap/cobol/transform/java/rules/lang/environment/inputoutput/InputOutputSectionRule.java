@@ -1,6 +1,6 @@
 package io.proleap.cobol.transform.java.rules.lang.environment.inputoutput;
 
-import javax.inject.Singleton;
+import jakarta.inject.Singleton;
 
 import io.proleap.cobol.CobolParser.InputOutputSectionContext;
 import io.proleap.cobol.asg.metamodel.environment.inputoutput.InputOutputSection;

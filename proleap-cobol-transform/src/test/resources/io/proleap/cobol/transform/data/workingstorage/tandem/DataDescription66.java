@@ -3,7 +3,7 @@ import java.math.BigDecimal;
 import java.util.Arrays;
 import java.util.ArrayList;
 import java.util.List;
-import javax.inject.Inject;
+import jakarta.inject.Inject;
 
 import io.proleap.cobol.api.*;
 import io.proleap.cobol.api.environment.inputoutput.filecontrol.*;

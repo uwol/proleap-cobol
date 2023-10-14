@@ -1,6 +1,6 @@
 package io.proleap.cobol.transform.java.rules.lang.procedure.read;
 
-import javax.inject.Singleton;
+import jakarta.inject.Singleton;
 
 import io.proleap.cobol.CobolParser.ReadStatementContext;
 import io.proleap.cobol.asg.metamodel.procedure.read.Into;

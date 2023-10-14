@@ -3,8 +3,8 @@ package io.proleap.cobol.interpreter.handlers.procedure.impl;
 import java.util.Iterator;
 import java.util.List;
 
-import javax.inject.Inject;
-import javax.inject.Singleton;
+import jakarta.inject.Inject;
+import jakarta.inject.Singleton;
 
 import io.proleap.cobol.asg.metamodel.procedure.Paragraph;
 import io.proleap.cobol.asg.metamodel.procedure.Section;

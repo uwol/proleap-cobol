@@ -1,6 +1,6 @@
 package io.proleap.cobol.commons.datadescription.impl;
 
-import javax.inject.Singleton;
+import jakarta.inject.Singleton;
 
 import io.proleap.cobol.asg.metamodel.IntegerLiteral;
 import io.proleap.cobol.asg.metamodel.data.datadescription.DataDescriptionEntryGroup;

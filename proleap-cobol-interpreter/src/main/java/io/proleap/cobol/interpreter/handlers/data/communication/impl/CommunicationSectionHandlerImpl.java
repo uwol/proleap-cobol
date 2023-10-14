@@ -1,6 +1,6 @@
 package io.proleap.cobol.interpreter.handlers.data.communication.impl;
 
-import javax.inject.Singleton;
+import jakarta.inject.Singleton;
 
 import io.proleap.cobol.asg.metamodel.data.communication.CommunicationSection;
 import io.proleap.cobol.interpreter.handlers.data.communication.CommunicationSectionHandler;

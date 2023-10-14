@@ -3,8 +3,8 @@ package io.proleap.cobol.analysis.issues.rules.procedure.move;
 import java.math.BigDecimal;
 import java.util.stream.Stream;
 
-import javax.inject.Inject;
-import javax.inject.Singleton;
+import jakarta.inject.Inject;
+import jakarta.inject.Singleton;
 
 import io.proleap.cobol.analysis.issues.rules.FeatureGenerator;
 import io.proleap.cobol.asg.metamodel.CompilationUnit;

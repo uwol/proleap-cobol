@@ -1,7 +1,7 @@
 package io.proleap.cobol.transform.java.rules.lang.call;
 
-import javax.inject.Inject;
-import javax.inject.Singleton;
+import jakarta.inject.Inject;
+import jakarta.inject.Singleton;
 
 import io.proleap.cobol.CobolParser.AssignmentNameContext;
 import io.proleap.cobol.asg.metamodel.call.Call;

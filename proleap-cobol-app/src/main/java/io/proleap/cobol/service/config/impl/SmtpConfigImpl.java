@@ -1,7 +1,7 @@
 package io.proleap.cobol.service.config.impl;
 
-import javax.inject.Inject;
-import javax.inject.Singleton;
+import jakarta.inject.Inject;
+import jakarta.inject.Singleton;
 
 import io.proleap.cobol.env.EnvService;
 import io.proleap.cobol.service.config.SmtpConfig;

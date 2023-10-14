@@ -1,8 +1,8 @@
 package io.proleap.cobol.interpreter.handlers.procedure.close.impl;
 
-import javax.annotation.PostConstruct;
-import javax.inject.Inject;
-import javax.inject.Singleton;
+import jakarta.annotation.PostConstruct;
+import jakarta.inject.Inject;
+import jakarta.inject.Singleton;
 
 import io.proleap.cobol.asg.metamodel.call.FileControlEntryCall;
 import io.proleap.cobol.asg.metamodel.environment.inputoutput.filecontrol.FileControlEntry;

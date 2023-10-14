@@ -1,6 +1,6 @@
 package io.proleap.cobol.transform.java.rules.lang.procedure.call;
 
-import javax.inject.Singleton;
+import jakarta.inject.Singleton;
 
 import io.proleap.cobol.CobolParser.CallStatementContext;
 import io.proleap.cobol.asg.metamodel.procedure.NotOnExceptionClause;

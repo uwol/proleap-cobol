@@ -3,9 +3,9 @@ package io.proleap.cobol.service.mail.impl;
 import java.io.PrintWriter;
 import java.io.StringWriter;
 
-import javax.inject.Inject;
-import javax.inject.Singleton;
-import javax.mail.internet.MimeMessage;
+import jakarta.inject.Inject;
+import jakarta.inject.Singleton;
+import jakarta.mail.internet.MimeMessage;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

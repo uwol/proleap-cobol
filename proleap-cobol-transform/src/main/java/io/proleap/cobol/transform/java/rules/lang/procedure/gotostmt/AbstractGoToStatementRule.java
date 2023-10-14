@@ -1,7 +1,7 @@
 package io.proleap.cobol.transform.java.rules.lang.procedure.gotostmt;
 
-import javax.inject.Inject;
-import javax.inject.Singleton;
+import jakarta.inject.Inject;
+import jakarta.inject.Singleton;
 
 import org.antlr.v4.runtime.ParserRuleContext;
 

@@ -2,7 +2,7 @@ package io.proleap.cobol.transform.java.rules.lang.procedure.add;
 
 import java.util.List;
 
-import javax.inject.Singleton;
+import jakarta.inject.Singleton;
 
 import io.proleap.cobol.CobolParser.AddToStatementContext;
 import io.proleap.cobol.asg.metamodel.procedure.add.AddToStatement;

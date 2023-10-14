@@ -1,6 +1,6 @@
 package io.proleap.cobol.transform.java.rules.lang.data.linkage;
 
-import javax.inject.Singleton;
+import jakarta.inject.Singleton;
 
 import io.proleap.cobol.CobolParser.LinkageSectionContext;
 import io.proleap.cobol.asg.metamodel.data.datadescription.DataDescriptionEntry;

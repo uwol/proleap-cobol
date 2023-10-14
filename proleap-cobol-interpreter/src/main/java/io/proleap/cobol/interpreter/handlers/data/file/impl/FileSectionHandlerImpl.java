@@ -1,6 +1,6 @@
 package io.proleap.cobol.interpreter.handlers.data.file.impl;
 
-import javax.inject.Singleton;
+import jakarta.inject.Singleton;
 
 import io.proleap.cobol.asg.metamodel.data.file.FileDescriptionEntry;
 import io.proleap.cobol.asg.metamodel.data.file.FileSection;

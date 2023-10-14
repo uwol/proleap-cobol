@@ -1,6 +1,6 @@
 package io.proleap.cobol.transform.java.rules.lang.procedure.subtract;
 
-import javax.inject.Singleton;
+import jakarta.inject.Singleton;
 
 import io.proleap.cobol.CobolParser.SubtractStatementContext;
 import io.proleap.cobol.asg.metamodel.call.Call;

@@ -3,7 +3,7 @@ package io.proleap.cobol.interpreter.service.address.impl;
 import java.util.List;
 import java.util.stream.Collectors;
 
-import javax.inject.Singleton;
+import jakarta.inject.Singleton;
 
 import io.proleap.cobol.commons.value.domain.CobolValue;
 import io.proleap.cobol.interpreter.domain.address.CobolAddress;

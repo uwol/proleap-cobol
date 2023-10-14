@@ -1,6 +1,6 @@
 package io.proleap.cobol.transform.java.rules.lang.environment;
 
-import javax.inject.Singleton;
+import jakarta.inject.Singleton;
 
 import io.proleap.cobol.CobolParser.EnvironmentDivisionContext;
 import io.proleap.cobol.asg.metamodel.environment.EnvironmentDivision;

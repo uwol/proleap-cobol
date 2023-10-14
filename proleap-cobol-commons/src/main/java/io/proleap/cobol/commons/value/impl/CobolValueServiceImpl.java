@@ -2,7 +2,7 @@ package io.proleap.cobol.commons.value.impl;
 
 import java.math.BigDecimal;
 
-import javax.inject.Singleton;
+import jakarta.inject.Singleton;
 
 import io.proleap.cobol.asg.metamodel.ProgramUnit;
 import io.proleap.cobol.asg.metamodel.environment.EnvironmentDivision;

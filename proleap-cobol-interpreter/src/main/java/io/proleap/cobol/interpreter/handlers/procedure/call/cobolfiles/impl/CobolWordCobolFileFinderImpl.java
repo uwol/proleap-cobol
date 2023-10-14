@@ -2,7 +2,7 @@ package io.proleap.cobol.interpreter.handlers.procedure.call.cobolfiles.impl;
 
 import java.io.File;
 
-import javax.inject.Singleton;
+import jakarta.inject.Singleton;
 
 import io.proleap.cobol.asg.util.FilenameUtils;
 import io.proleap.cobol.interpreter.handlers.procedure.call.cobolfiles.CobolWordCobolFileFinder;

@@ -3,8 +3,8 @@ package io.proleap.cobol.commons.type.impl;
 import java.util.List;
 import java.util.regex.Matcher;
 
-import javax.inject.Inject;
-import javax.inject.Singleton;
+import jakarta.inject.Inject;
+import jakarta.inject.Singleton;
 
 import io.proleap.cobol.asg.metamodel.BooleanLiteral;
 import io.proleap.cobol.asg.metamodel.FigurativeConstant;

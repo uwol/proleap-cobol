@@ -1,6 +1,6 @@
 package io.proleap.cobol.interpreter.handlers.data.impl;
 
-import javax.inject.Inject;
+import jakarta.inject.Inject;
 
 import io.proleap.cobol.asg.metamodel.call.Call;
 import io.proleap.cobol.asg.metamodel.data.datadescription.DataDescriptionEntry;

@@ -1,6 +1,6 @@
 package io.proleap.cobol.interpreter.service.file.impl;
 
-import javax.inject.Singleton;
+import jakarta.inject.Singleton;
 
 import io.proleap.cobol.interpreter.domain.file.CobolFile;
 import io.proleap.cobol.interpreter.service.file.CobolIndexedFileAccessService;

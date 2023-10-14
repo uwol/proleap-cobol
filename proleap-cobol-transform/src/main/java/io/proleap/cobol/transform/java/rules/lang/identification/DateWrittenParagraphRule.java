@@ -1,6 +1,6 @@
 package io.proleap.cobol.transform.java.rules.lang.identification;
 
-import javax.inject.Singleton;
+import jakarta.inject.Singleton;
 
 import io.proleap.cobol.CobolParser.DateWrittenParagraphContext;
 import io.proleap.cobol.asg.metamodel.identification.DateWrittenParagraph;

@@ -1,6 +1,6 @@
 package io.proleap.cobol.commons.value;
 
-import javax.inject.Singleton;
+import jakarta.inject.Singleton;
 
 import io.proleap.cobol.asg.metamodel.valuestmt.ValueStmt;
 

@@ -2,8 +2,8 @@ package io.proleap.cobol.interpreter.service.file.impl;
 
 import java.util.List;
 
-import javax.inject.Inject;
-import javax.inject.Singleton;
+import jakarta.inject.Inject;
+import jakarta.inject.Singleton;
 
 import io.proleap.cobol.asg.metamodel.ProgramUnit;
 import io.proleap.cobol.asg.metamodel.environment.inputoutput.filecontrol.AccessModeClause;

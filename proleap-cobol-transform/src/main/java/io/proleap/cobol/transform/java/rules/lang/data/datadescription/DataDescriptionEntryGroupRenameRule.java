@@ -2,8 +2,8 @@ package io.proleap.cobol.transform.java.rules.lang.data.datadescription;
 
 import java.util.List;
 
-import javax.inject.Inject;
-import javax.inject.Singleton;
+import jakarta.inject.Inject;
+import jakarta.inject.Singleton;
 
 import io.proleap.cobol.CobolParser.DataDescriptionEntryFormat2Context;
 import io.proleap.cobol.asg.metamodel.call.Call;

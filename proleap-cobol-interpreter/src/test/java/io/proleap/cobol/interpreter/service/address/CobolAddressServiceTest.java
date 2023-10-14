@@ -6,11 +6,11 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-import javax.inject.Inject;
+import jakarta.inject.Inject;
 
 import org.junit.jupiter.api.Test;
 
-import io.micronaut.test.annotation.MicronautTest;
+import io.micronaut.test.extensions.junit5.annotation.MicronautTest;
 import io.proleap.cobol.commons.value.domain.CobolStringValue;
 import io.proleap.cobol.commons.value.domain.CobolValue;
 import io.proleap.cobol.commons.value.domain.CobolValue.CobolValueType;

@@ -2,8 +2,8 @@ package io.proleap.cobol.transform.java.rules.lang.procedure.compute;
 
 import java.math.BigDecimal;
 
-import javax.inject.Inject;
-import javax.inject.Singleton;
+import jakarta.inject.Inject;
+import jakarta.inject.Singleton;
 
 import io.proleap.cobol.CobolParser.ComputeStatementContext;
 import io.proleap.cobol.asg.metamodel.procedure.compute.ComputeStatement;

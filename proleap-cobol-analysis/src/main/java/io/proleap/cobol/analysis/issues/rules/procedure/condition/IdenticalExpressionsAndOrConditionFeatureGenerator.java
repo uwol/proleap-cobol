@@ -5,8 +5,8 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.stream.Stream;
 
-import javax.inject.Inject;
-import javax.inject.Singleton;
+import jakarta.inject.Inject;
+import jakarta.inject.Singleton;
 
 import io.proleap.cobol.analysis.issues.rules.FeatureGenerator;
 import io.proleap.cobol.analysis.util.StatementUtils;

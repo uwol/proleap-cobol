@@ -1,6 +1,6 @@
 package io.proleap.cobol.interpreter.handlers.data.localstorage.impl;
 
-import javax.inject.Singleton;
+import jakarta.inject.Singleton;
 
 import io.proleap.cobol.asg.metamodel.data.localstorage.LocalStorageSection;
 import io.proleap.cobol.interpreter.handlers.data.impl.AbstractDataDescriptionEntryContainerInitializer;

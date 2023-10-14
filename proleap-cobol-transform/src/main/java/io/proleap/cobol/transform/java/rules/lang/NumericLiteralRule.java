@@ -2,7 +2,7 @@ package io.proleap.cobol.transform.java.rules.lang;
 
 import java.math.BigDecimal;
 
-import javax.inject.Singleton;
+import jakarta.inject.Singleton;
 
 import io.proleap.cobol.CobolParser.NumericLiteralContext;
 import io.proleap.cobol.asg.metamodel.NumericLiteral;

@@ -1,7 +1,7 @@
 package io.proleap.cobol.interpreter.handlers.data.impl;
 
-import javax.inject.Inject;
-import javax.inject.Singleton;
+import jakarta.inject.Inject;
+import jakarta.inject.Singleton;
 
 import io.proleap.cobol.asg.metamodel.data.DataDivision;
 import io.proleap.cobol.asg.metamodel.data.communication.CommunicationSection;

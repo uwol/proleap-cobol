@@ -2,11 +2,11 @@ package io.proleap.cobol.commons.datadescription;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-import javax.inject.Inject;
+import jakarta.inject.Inject;
 
 import org.junit.jupiter.api.Test;
 
-import io.micronaut.test.annotation.MicronautTest;
+import io.micronaut.test.extensions.junit5.annotation.MicronautTest;
 import io.proleap.cobol.commons.TestBase;
 
 @MicronautTest

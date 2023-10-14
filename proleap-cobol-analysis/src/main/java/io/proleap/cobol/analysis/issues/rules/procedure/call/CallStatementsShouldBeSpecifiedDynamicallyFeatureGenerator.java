@@ -2,7 +2,7 @@ package io.proleap.cobol.analysis.issues.rules.procedure.call;
 
 import java.util.stream.Stream;
 
-import javax.inject.Singleton;
+import jakarta.inject.Singleton;
 
 import org.antlr.v4.runtime.ParserRuleContext;
 

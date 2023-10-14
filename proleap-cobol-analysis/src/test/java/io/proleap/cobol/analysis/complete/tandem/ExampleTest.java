@@ -6,12 +6,12 @@ import static org.junit.jupiter.api.Assertions.assertNotNull;
 import java.io.File;
 import java.util.List;
 
-import javax.inject.Inject;
+import jakarta.inject.Inject;
 
 import org.dom4j.Document;
 import org.junit.jupiter.api.Test;
 
-import io.micronaut.test.annotation.MicronautTest;
+import io.micronaut.test.extensions.junit5.annotation.MicronautTest;
 import io.proleap.cobol.analysis.TestBase;
 import io.proleap.cobol.analysis.codexml.CobolCodeXmlRunner;
 import io.proleap.cobol.analysis.registry.CobolIdRegistry;

@@ -1,6 +1,6 @@
 package io.proleap.cobol.transform.java.rules.lang.procedure.exit;
 
-import javax.inject.Singleton;
+import jakarta.inject.Singleton;
 
 import io.proleap.cobol.CobolParser.ExitStatementContext;
 import io.proleap.cobol.asg.metamodel.procedure.exit.ExitStatement;

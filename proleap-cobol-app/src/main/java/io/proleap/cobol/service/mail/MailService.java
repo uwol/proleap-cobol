@@ -1,6 +1,6 @@
 package io.proleap.cobol.service.mail;
 
-import javax.mail.internet.MimeMessage;
+import jakarta.mail.internet.MimeMessage;
 
 public interface MailService {
 

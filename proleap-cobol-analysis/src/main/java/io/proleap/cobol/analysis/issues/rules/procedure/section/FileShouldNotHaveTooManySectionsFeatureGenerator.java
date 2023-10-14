@@ -3,7 +3,7 @@ package io.proleap.cobol.analysis.issues.rules.procedure.section;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-import javax.inject.Singleton;
+import jakarta.inject.Singleton;
 
 import io.proleap.cobol.analysis.issues.rules.FeatureGenerator;
 import io.proleap.cobol.asg.metamodel.CompilationUnit;

@@ -1,6 +1,6 @@
 package io.proleap.cobol.transform.java.rules.lang.procedure.multiply;
 
-import javax.inject.Singleton;
+import jakarta.inject.Singleton;
 
 import io.proleap.cobol.CobolParser.MultiplyStatementContext;
 import io.proleap.cobol.asg.metamodel.procedure.multiply.ByOperand;

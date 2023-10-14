@@ -2,7 +2,7 @@ package io.proleap.cobol;
 
 import java.util.EnumSet;
 
-import javax.servlet.DispatcherType;
+import jakarta.servlet.DispatcherType;
 
 import org.eclipse.jetty.server.Handler;
 import org.eclipse.jetty.server.Server;

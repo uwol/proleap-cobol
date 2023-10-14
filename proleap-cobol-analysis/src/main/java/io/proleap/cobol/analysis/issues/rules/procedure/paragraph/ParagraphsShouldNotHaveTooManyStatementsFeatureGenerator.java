@@ -4,7 +4,7 @@ import java.util.List;
 import java.util.stream.Stream;
 import java.util.stream.Stream.Builder;
 
-import javax.inject.Singleton;
+import jakarta.inject.Singleton;
 
 import io.proleap.cobol.analysis.issues.rules.FeatureGenerator;
 import io.proleap.cobol.asg.metamodel.CompilationUnit;

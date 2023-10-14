@@ -1,7 +1,7 @@
 package io.proleap.cobol.transform.java.rules.lang.environment.inputoutput.filecontrol;
 
-import javax.inject.Inject;
-import javax.inject.Singleton;
+import jakarta.inject.Inject;
+import jakarta.inject.Singleton;
 
 import io.proleap.cobol.CobolParser.FileControlEntryContext;
 import io.proleap.cobol.asg.metamodel.environment.inputoutput.filecontrol.AssignClause;

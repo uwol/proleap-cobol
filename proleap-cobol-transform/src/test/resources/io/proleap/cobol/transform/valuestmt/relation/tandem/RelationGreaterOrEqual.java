@@ -3,10 +3,10 @@ import java.math.BigDecimal;
 import java.util.Arrays;
 import java.util.ArrayList;
 import java.util.List;
-import javax.inject.Inject;
-import javax.inject.Singleton;
+import jakarta.inject.Inject;
+import jakarta.inject.Singleton;
 
-import javax.validation.constraints.*;
+import jakarta.validation.constraints.*;
 import io.proleap.cobol.api.*;
 import io.proleap.cobol.api.data.*;
 import io.proleap.cobol.api.environment.configuration.object.*;

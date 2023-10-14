@@ -2,7 +2,7 @@ package io.proleap.cobol.commons.datadescription.impl;
 
 import java.util.regex.Matcher;
 
-import javax.inject.Singleton;
+import jakarta.inject.Singleton;
 
 import io.proleap.cobol.asg.metamodel.data.datadescription.DataDescriptionEntry;
 import io.proleap.cobol.asg.metamodel.data.datadescription.DataDescriptionEntryGroup;

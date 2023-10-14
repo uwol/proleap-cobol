@@ -2,8 +2,8 @@ package io.proleap.cobol.api.environment.inputoutput.filecontrol.impl;
 
 import java.io.IOException;
 
-import javax.validation.Validation;
-import javax.validation.Validator;
+import jakarta.validation.Validation;
+import jakarta.validation.Validator;
 
 import io.proleap.cobol.api.environment.inputoutput.filecontrol.FileControlEntry;
 import io.proleap.cobol.api.environment.inputoutput.filecontrol.FileControlService;

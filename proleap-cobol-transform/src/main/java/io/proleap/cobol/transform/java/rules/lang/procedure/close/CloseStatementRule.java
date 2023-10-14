@@ -1,6 +1,6 @@
 package io.proleap.cobol.transform.java.rules.lang.procedure.close;
 
-import javax.inject.Singleton;
+import jakarta.inject.Singleton;
 
 import io.proleap.cobol.CobolParser.CloseStatementContext;
 import io.proleap.cobol.asg.metamodel.procedure.close.CloseFile;

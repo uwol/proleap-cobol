@@ -1,6 +1,6 @@
 package io.proleap.cobol.transform.java.identifier.impl;
 
-import javax.inject.Singleton;
+import jakarta.inject.Singleton;
 
 import io.proleap.cobol.transform.java.identifier.JavaIdentifierService;
 

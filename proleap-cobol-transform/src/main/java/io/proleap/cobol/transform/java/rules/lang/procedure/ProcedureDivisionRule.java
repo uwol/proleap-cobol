@@ -1,6 +1,6 @@
 package io.proleap.cobol.transform.java.rules.lang.procedure;
 
-import javax.inject.Singleton;
+import jakarta.inject.Singleton;
 
 import io.proleap.cobol.CobolParser.ProcedureDivisionContext;
 import io.proleap.cobol.asg.metamodel.procedure.Paragraph;
