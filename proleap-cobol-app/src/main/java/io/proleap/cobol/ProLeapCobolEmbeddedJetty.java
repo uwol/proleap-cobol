@@ -18,7 +18,7 @@ import ch.qos.logback.classic.Level;
 import io.proleap.cobol.filters.ErrorHandlerFilter;
 import io.proleap.cobol.handlers.SilentErrorHandler;
 import io.proleap.cobol.log.ProLeapThreadLocalLogAppender;
-import io.proleap.cobol.servlets.ServiceStatusServlet;
+import io.proleap.cobol.servlets.UpServlet;
 import io.proleap.cobol.servlets.cobol.analyze.CobolTextAnalyzeServlet;
 import io.proleap.cobol.servlets.cobol.execute.CobolTextExecuteServlet;
 import io.proleap.cobol.servlets.cobol.transform.CobolTextTransformServlet;
@@ -72,7 +72,7 @@ public class ProLeapCobolEmbeddedJetty {
 		// CobolZipTransformServlet.PATTERN).getRegistration()
 		// .setMultipartConfig(new MultipartConfigElement(""));
 
-		context.addServlet(ServiceStatusServlet.class, ServiceStatusServlet.PATTERN);
+		context.addServlet(UpServlet.class, UpServlet.PATTERN);
 		context.addServlet(WarmupCronServlet.class, WarmupCronServlet.PATTERN);
 		context.addServlet(WebMailServlet.class, WebMailServlet.PATTERN);
 
