@@ -23,7 +23,6 @@ import io.proleap.cobol.asg.metamodel.CompilationUnit;
 import io.proleap.cobol.asg.metamodel.Program;
 import io.proleap.cobol.asg.params.CobolParserParams;
 import io.proleap.cobol.asg.runner.impl.CobolParserRunnerImpl;
-import io.proleap.cobol.log.ProLeapThreadLocalLogAppender;
 import io.proleap.cobol.preprocessor.CobolPreprocessor.CobolSourceFormatEnum;
 import io.proleap.cobol.service.analysis.cobol.CobolTextAnalysisService;
 import io.proleap.cobol.service.analysis.cobol.dto.CobolAnalysisParamDto;
@@ -44,8 +43,6 @@ public class CobolTextAnalysisServiceImpl extends AbstractCobolService implement
 		final CobolAnalysisResultDto result = new CobolAnalysisResultDto();
 
 		try {
-			ProLeapThreadLocalLogAppender.reset();
-
 			final CobolAnalysisParamDto param = new ObjectMapper().readValue(req.getInputStream(),
 					CobolAnalysisParamDto.class);
 
@@ -71,8 +68,6 @@ public class CobolTextAnalysisServiceImpl extends AbstractCobolService implement
 			new ObjectMapper().writeValue(resp.getOutputStream(), result);
 		} catch (final Exception e) {
 			handleException(resp, e);
-		} finally {
-			ProLeapThreadLocalLogAppender.reset();
 		}
 	}
 

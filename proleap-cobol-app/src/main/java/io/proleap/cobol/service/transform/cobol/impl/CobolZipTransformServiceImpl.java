@@ -18,7 +18,6 @@ import org.slf4j.LoggerFactory;
 import com.google.common.base.Strings;
 
 import io.proleap.cobol.asg.params.CobolParserParams;
-import io.proleap.cobol.log.ProLeapThreadLocalLogAppender;
 import io.proleap.cobol.preprocessor.CobolPreprocessor.CobolSourceFormatEnum;
 import io.proleap.cobol.service.impl.AbstractCobolService;
 import io.proleap.cobol.service.input.RequestCloneFilesService;
@@ -76,7 +75,6 @@ public class CobolZipTransformServiceImpl extends AbstractCobolService implement
 			pomXmlFile = getPomXmlFile();
 
 			zipOutputFileService.addZipEntry(pomXmlFile, "", zipOutputStream);
-			zipOutputFileService.addLogZipEntry(ProLeapThreadLocalLogAppender.getLog(), TRANSFORM_LOG, zipOutputStream);
 
 			zipOutputStream.flush();
 			zipOutputStream.close();
@@ -120,8 +118,6 @@ public class CobolZipTransformServiceImpl extends AbstractCobolService implement
 				LOG.warn("Will not log to remote api as transformation id is {}.", transformationId);
 			}
 
-			ProLeapThreadLocalLogAppender.reset();
-
 			tempDir = requestCloneFilesService.cloneFiles(req);
 
 			if (tempDir == null) {
@@ -139,8 +135,6 @@ public class CobolZipTransformServiceImpl extends AbstractCobolService implement
 		} catch (final Exception e) {
 			handleException(resp, e);
 		} finally {
-			ProLeapThreadLocalLogAppender.reset();
-
 			FilesUtils.deleteFiles(inputFiles);
 			FilesUtils.deleteFiles(copyBookFiles);
 			FilesUtils.deleteFile(tempDir);

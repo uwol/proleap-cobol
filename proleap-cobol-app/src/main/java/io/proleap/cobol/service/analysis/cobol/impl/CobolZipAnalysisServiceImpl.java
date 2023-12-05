@@ -29,7 +29,6 @@ import io.proleap.cobol.asg.metamodel.CompilationUnit;
 import io.proleap.cobol.asg.metamodel.Program;
 import io.proleap.cobol.asg.params.CobolParserParams;
 import io.proleap.cobol.asg.runner.impl.CobolParserRunnerImpl;
-import io.proleap.cobol.log.ProLeapThreadLocalLogAppender;
 import io.proleap.cobol.preprocessor.CobolPreprocessor.CobolSourceFormatEnum;
 import io.proleap.cobol.service.analysis.cobol.CobolZipAnalysisService;
 import io.proleap.cobol.service.impl.AbstractCobolService;
@@ -40,8 +39,6 @@ import io.proleap.cobol.util.RequestUtils;
 
 @Singleton
 public class CobolZipAnalysisServiceImpl extends AbstractCobolService implements CobolZipAnalysisService {
-
-	private static final String ANALYSIS_LOG = "analysis.log";
 
 	private final static Logger LOG = LoggerFactory.getLogger(CobolZipAnalysisServiceImpl.class);
 
@@ -80,8 +77,6 @@ public class CobolZipAnalysisServiceImpl extends AbstractCobolService implements
 				LOG.warn("Will not log to remote api as analysis id is {}.", analysisId);
 			}
 
-			ProLeapThreadLocalLogAppender.reset();
-
 			tempDir = requestCloneFilesService.cloneFiles(req);
 
 			if (tempDir == null) {
@@ -99,8 +94,6 @@ public class CobolZipAnalysisServiceImpl extends AbstractCobolService implements
 		} catch (final Exception e) {
 			handleException(res, e);
 		} finally {
-			ProLeapThreadLocalLogAppender.reset();
-
 			FilesUtils.deleteFiles(inputFiles);
 			FilesUtils.deleteFiles(copyBookFiles);
 			FilesUtils.deleteFile(tempDir);
@@ -169,7 +162,6 @@ public class CobolZipAnalysisServiceImpl extends AbstractCobolService implements
 			Collections.sort(issuesDto.issues);
 
 			zipOutputFileService.addAnalysisIssueZipEntry(issuesDto, zipOutputStream);
-			zipOutputFileService.addLogZipEntry(ProLeapThreadLocalLogAppender.getLog(), ANALYSIS_LOG, zipOutputStream);
 
 			zipOutputStream.flush();
 			zipOutputStream.close();

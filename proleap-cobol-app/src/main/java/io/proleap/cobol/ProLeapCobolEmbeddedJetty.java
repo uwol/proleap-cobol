@@ -11,13 +11,9 @@ import org.eclipse.jetty.server.handler.HandlerList;
 import org.eclipse.jetty.webapp.Configuration;
 import org.eclipse.jetty.webapp.FragmentConfiguration;
 import org.eclipse.jetty.webapp.WebAppContext;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
-import ch.qos.logback.classic.Level;
 import io.proleap.cobol.filters.ErrorHandlerFilter;
 import io.proleap.cobol.handlers.SilentErrorHandler;
-import io.proleap.cobol.log.ProLeapThreadLocalLogAppender;
 import io.proleap.cobol.servlets.UpServlet;
 import io.proleap.cobol.servlets.cobol.analyze.CobolTextAnalyzeServlet;
 import io.proleap.cobol.servlets.cobol.execute.CobolTextExecuteServlet;
@@ -29,25 +25,9 @@ public class ProLeapCobolEmbeddedJetty {
 
 	private static final int DEFAULT_PORT = 4567;
 
-	private final static Logger LOG = LoggerFactory.getLogger(ProLeapCobolEmbeddedJetty.class);
-
 	private static final String PORT = "PORT";
 
-	private static void configureLogAppenders() {
-		LOG.info("Configuring ProLeap API log appender.");
-
-		final ch.qos.logback.classic.Logger logbackLogger = (ch.qos.logback.classic.Logger) LoggerFactory
-				.getLogger(Logger.ROOT_LOGGER_NAME);
-		logbackLogger.setLevel(Level.INFO);
-
-		final ProLeapThreadLocalLogAppender proLeapThreadLocalLogAppender = new ProLeapThreadLocalLogAppender();
-		proLeapThreadLocalLogAppender.start();
-		logbackLogger.addAppender(proLeapThreadLocalLogAppender);
-	}
-
 	public static void main(final String[] args) throws Exception {
-		configureLogAppenders();
-
 		final int port = System.getenv(PORT) != null ? Integer.valueOf(System.getenv(PORT)) : DEFAULT_PORT;
 		final Server server = new Server(port);
 
