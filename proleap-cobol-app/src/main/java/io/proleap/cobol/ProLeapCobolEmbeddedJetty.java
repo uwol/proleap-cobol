@@ -8,9 +8,7 @@ import org.eclipse.jetty.server.Handler;
 import org.eclipse.jetty.server.Server;
 import org.eclipse.jetty.server.handler.ErrorHandler;
 import org.eclipse.jetty.server.handler.HandlerList;
-import org.eclipse.jetty.webapp.Configuration;
-import org.eclipse.jetty.webapp.FragmentConfiguration;
-import org.eclipse.jetty.webapp.WebAppContext;
+import org.eclipse.jetty.servlet.ServletContextHandler;
 
 import io.proleap.cobol.filters.ErrorHandlerFilter;
 import io.proleap.cobol.handlers.SilentErrorHandler;
@@ -34,7 +32,7 @@ public class ProLeapCobolEmbeddedJetty {
 		final ErrorHandler errorHandler = new SilentErrorHandler();
 		errorHandler.setShowStacks(false);
 
-		final WebAppContext context = new WebAppContext();
+		final ServletContextHandler context = new ServletContextHandler();
 		context.setContextPath("/");
 		context.setErrorHandler(errorHandler);
 
@@ -44,22 +42,12 @@ public class ProLeapCobolEmbeddedJetty {
 		context.addServlet(CobolTextExecuteServlet.class, CobolTextExecuteServlet.PATTERN);
 		context.addServlet(CobolTextTransformServlet.class, CobolTextTransformServlet.PATTERN);
 
-		// context.addServlet(CobolZipAnalyzeServlet.class,
-		// CobolZipAnalyzeServlet.PATTERN).getRegistration()
-		// .setMultipartConfig(new MultipartConfigElement(""));
-
-		// context.addServlet(CobolZipTransformServlet.class,
-		// CobolZipTransformServlet.PATTERN).getRegistration()
-		// .setMultipartConfig(new MultipartConfigElement(""));
-
 		context.addServlet(UpServlet.class, UpServlet.PATTERN);
 		context.addServlet(WarmupCronServlet.class, WarmupCronServlet.PATTERN);
 		context.addServlet(WebMailServlet.class, WebMailServlet.PATTERN);
 
 		final HandlerList handlers = new HandlerList();
 		handlers.setHandlers(new Handler[] { context });
-
-		context.setConfigurations(new Configuration[] { new FragmentConfiguration() });
 
 		server.addBean(errorHandler);
 
