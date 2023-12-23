@@ -25,12 +25,18 @@ public class ProLeapCobolEmbeddedJetty {
 
 	private static final String PORT = "PORT";
 
+	private static ErrorHandler createErrorHandler() {
+		final ErrorHandler result = new SilentErrorHandler();
+		result.setShowStacks(false);
+
+		return result;
+	}
+
 	public static void main(final String[] args) throws Exception {
 		final int port = System.getenv(PORT) != null ? Integer.valueOf(System.getenv(PORT)) : DEFAULT_PORT;
 		final Server server = new Server(port);
 
-		final ErrorHandler errorHandler = new SilentErrorHandler();
-		errorHandler.setShowStacks(false);
+		final ErrorHandler errorHandler = createErrorHandler();
 
 		final ServletContextHandler context = new ServletContextHandler();
 		context.setContextPath("/");
