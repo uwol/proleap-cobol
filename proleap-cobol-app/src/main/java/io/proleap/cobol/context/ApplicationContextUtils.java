@@ -7,21 +7,21 @@ import io.proleap.cobol.interpreter.context.PostConstructBean;
 
 public class ApplicationContextUtils {
 
-	private static ApplicationContext APPLICATION_CONTEXT;
+	private static ApplicationContext applicationContext;
 
 	/**
 	 * cf. double checked locking singleton -> this is a best practice!
 	 */
 	private static ApplicationContext assureApplicationContext() {
-		if (APPLICATION_CONTEXT == null) {
+		if (applicationContext == null) {
 			synchronized (ApplicationContextUtils.class) {
-				if (APPLICATION_CONTEXT == null) {
-					APPLICATION_CONTEXT = createApplicationContext();
+				if (applicationContext == null) {
+					applicationContext = createApplicationContext();
 				}
 			}
 		}
 
-		return APPLICATION_CONTEXT;
+		return applicationContext;
 	}
 
 	private static ApplicationContext createApplicationContext() {
