@@ -2,7 +2,7 @@
 * import libraries
 */
 import { createApp } from 'vue'
-import { createI18n } from 'vue-i18n/index'
+import { createI18n } from 'vue-i18n'
 import locale2 from 'locale2'
 
 import App from './App.vue'
