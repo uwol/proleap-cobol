@@ -3,8 +3,6 @@ ProLeap ANTLR4-based analyzer, interpreter & transformer for COBOL
 
 This is an analyzer, interpreter & transformer for COBOL based on [ProLeap COBOL parser](https://github.com/uwol/proleap-cobol-parser). The parser generates an **Abstract Syntax Tree** (AST) and **Abstract Semantic Graph** (ASG) for COBOL code, which then is processed by this analyzer, interpreter & transformer.
 
-At [proleap.io](https://www.proleap.io/) you find a deployed version of this repository that allows you to test with your COBOL files.
-
 💫 **Star** if you like our work.
 
 [![License: AGPL v3](https://img.shields.io/badge/License-AGPL%20v3-blue.svg)](https://www.gnu.org/licenses/agpl-3.0)
@@ -14,13 +12,13 @@ At [proleap.io](https://www.proleap.io/) you find a deployed version of this rep
 Getting started
 ---------------
 
-In Eclipse open [ProLeapCobolEmbeddedJetty](proleap-cobol-app/src/main/java/io/proleap/cobol/ProLeapCobolEmbeddedJetty.java) and run the main method as Java application. A Jetty will start, which offers the functionality as on [proleap.io](https://www.proleap.io/).
+In Eclipse open [ProLeapCobolEmbeddedJetty](proleap-cobol-app/src/main/java/io/proleap/cobol/ProLeapCobolEmbeddedJetty.java) and run the main method as Java application. A Jetty will start.
 
 
 Support
 -------
 
-This program is free software under AGPL v3 license and in this form comes without support. However, our company [ProLeap GmbH](https://www.proleap.io/imprint) is open to discuss project and license requirements with your company. Feel free to contact us at contact@proleap.io
+This program is free software under AGPL v3 license and in this form comes without support.
 
 
 License
